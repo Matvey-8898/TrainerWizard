@@ -1692,12 +1692,11 @@ class TrainingApp:
         
         # Путь к GIF - пробуем несколько вариантов
         possible_paths = [
-            Path(__file__).parent / "assets",  # Для APK
+            Path(__file__).parent / "assets",
             Path(__file__).parent.parent / "exercise_gifs",
             Path(__file__).parent / "exercise_gifs",
-            Path(r"c:\Users\Матвей\Desktop\проект\exercise_gifs"),
-            Path.cwd() / "assets",
             Path.cwd() / "exercise_gifs",
+            Path.cwd() / "assets",
         ]
         
         self.gifs_dir = None

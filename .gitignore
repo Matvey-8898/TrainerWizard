@@ -42,13 +42,17 @@ mobile_app/fitwizard_save.json
 mobile_app/__pycache__/
 mobile_app/assets/
 
-# Ненужные картинки в exercise_gifs
+# Ненужные файлы в exercise_gifs
 exercise_gifs/.git/
 exercise_gifs/.github/
 exercise_gifs/desktop.ini
-exercise_gifs/*.jpg
-exercise_gifs/*.png
-exercise_gifs/*.avif
+exercise_gifs/README.md
+exercise_gifs/1a191506bb7dc8def2da5550203f22e6.jpg
+exercise_gifs/image-*.jpeg
+exercise_gifs/image-*.png
+exercise_gifs/ntkj.png
+exercise_gifs/кнопки.avif
+exercise_gifs/ТЕЛЛОЛ — копия.png
 
 # Корневые картинки
 *.jpg
