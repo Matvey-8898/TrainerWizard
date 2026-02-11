@@ -2045,7 +2045,7 @@ class TrainingApp:
                     color="white",
                     width=800,
                     height=50,
-                    on_click=lambda e: self.page.window.close()
+                    on_click=lambda e: self.page.window.destroy()
                 ),
             ], horizontal_alignment=ft.CrossAxisAlignment.CENTER, scroll=ft.ScrollMode.AUTO),
             padding=25,
