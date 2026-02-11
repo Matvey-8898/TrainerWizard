@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.venv_py313/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# Системное
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# Старые/ненужные файлы
+*.bat
+*.pptx
+*.md
+!README.md
+!mobile_app/README.md
+
+# Тесты и скрипты
+test_*.py
+trainer_wizard.py
+trainer_wizard_kivy.py
+
+# Ненужные папки
+fitwizard_flutter/
+focus_images/
+
+# Ненужные файлы в mobile_app
+mobile_app/add_*.py
+mobile_app/flet_app_*.py
+mobile_app/trainer_mobile.py
+mobile_app/trainer_v3_backup.py
+mobile_app/test_program.py
+mobile_app/buildozer.spec
+mobile_app/fitwizard_save.json
+mobile_app/__pycache__/
+mobile_app/assets/
+
+# Ненужные картинки в exercise_gifs
+exercise_gifs/.git/
+exercise_gifs/.github/
+exercise_gifs/desktop.ini
+exercise_gifs/*.jpg
+exercise_gifs/*.png
+exercise_gifs/*.avif
+
+# Корневые картинки
+*.jpg
+*.png
