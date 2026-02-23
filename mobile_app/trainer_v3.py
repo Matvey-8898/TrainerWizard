@@ -170,6 +170,24 @@ LOCALES = {
         'diary_title': '📊 ДНЕВНИК ТРЕНИРОВОК',
         'total_workouts': 'Всего тренировок',
         'great_progress': '🎉 Отличный прогресс! Так держать!',
+        'diary_total_time': 'Общее время',
+        'diary_completion': 'Выполнено',
+        'diary_missed': 'Пропущено',
+        'diary_upcoming': 'Впереди',
+        'diary_streak': 'Серия подряд',
+        'diary_avg_time': 'Среднее время',
+        'diary_progress_title': '📅 ПРОГРЕСС ПО ДНЯМ',
+        'diary_status_done': '✅ Выполнено',
+        'diary_status_rest_done': '😴 Отдых',
+        'diary_status_missed': '❌ Пропущено',
+        'diary_status_upcoming': '⏳ Впереди',
+        'diary_history_title': '📋 ИСТОРИЯ ТРЕНИРОВОК',
+        'diary_skipped_ex': 'Пропущено упр.',
+        'diary_no_skipped': 'Все выполнены',
+        'diary_exercises_list': 'Упражнения',
+        'diary_min': 'мин',
+        'diary_workouts_word': 'тренировок',
+        'diary_days_word': 'дней',
         # Результаты тренировки
         'workout_complete': '🎉 ОТЛИЧНО!',
         'workout_finished': 'Тренировка завершена!',
@@ -481,6 +499,24 @@ LOCALES = {
         'diary_title': '📊 WORKOUT DIARY',
         'total_workouts': 'Total workouts',
         'great_progress': '🎉 Great progress! Keep it up!',
+        'diary_total_time': 'Total time',
+        'diary_completion': 'Completed',
+        'diary_missed': 'Missed',
+        'diary_upcoming': 'Upcoming',
+        'diary_streak': 'Streak',
+        'diary_avg_time': 'Avg time',
+        'diary_progress_title': '📅 DAILY PROGRESS',
+        'diary_status_done': '✅ Done',
+        'diary_status_rest_done': '😴 Rest',
+        'diary_status_missed': '❌ Missed',
+        'diary_status_upcoming': '⏳ Upcoming',
+        'diary_history_title': '📋 WORKOUT HISTORY',
+        'diary_skipped_ex': 'Skipped ex.',
+        'diary_no_skipped': 'All completed',
+        'diary_exercises_list': 'Exercises',
+        'diary_min': 'min',
+        'diary_workouts_word': 'workouts',
+        'diary_days_word': 'days',
         'workout_complete': '🎉 GREAT!',
         'workout_finished': 'Workout finished!',
         'great_job': 'Great job!',
@@ -816,6 +852,24 @@ LOCALES = {
         'diary_title': '📊 DIARIO DE ENTRENAMIENTOS',
         'total_workouts': 'Total entrenamientos',
         'great_progress': '🎉 ¡Gran progreso! ¡Sigue así!',
+        'diary_total_time': 'Tiempo total',
+        'diary_completion': 'Completado',
+        'diary_missed': 'Perdido',
+        'diary_upcoming': 'Próximo',
+        'diary_streak': 'Racha',
+        'diary_avg_time': 'Tiempo promedio',
+        'diary_progress_title': '📅 PROGRESO DIARIO',
+        'diary_status_done': '✅ Hecho',
+        'diary_status_rest_done': '😴 Descanso',
+        'diary_status_missed': '❌ Perdido',
+        'diary_status_upcoming': '⏳ Próximo',
+        'diary_history_title': '📋 HISTORIAL',
+        'diary_skipped_ex': 'Ej. omitidos',
+        'diary_no_skipped': 'Todos completados',
+        'diary_exercises_list': 'Ejercicios',
+        'diary_min': 'min',
+        'diary_workouts_word': 'entrenamientos',
+        'diary_days_word': 'días',
         'rec_progression': 'Aumente la carga 5-10% cada 2 semanas',
         'rec_measurements': 'Tome medidas corporales cada 2 semanas',
         # Nuevas claves
@@ -1105,6 +1159,24 @@ LOCALES = {
         'diary_title': '📊 TRAININGSTAGEBUCH',
         'total_workouts': 'Training insgesamt',
         'great_progress': '🎉 Toller Fortschritt! Weiter so!',
+        'diary_total_time': 'Gesamtzeit',
+        'diary_completion': 'Abgeschlossen',
+        'diary_missed': 'Verpasst',
+        'diary_upcoming': 'Bevorstehend',
+        'diary_streak': 'Serie',
+        'diary_avg_time': 'Durchschn. Zeit',
+        'diary_progress_title': '📅 TAGESFORTSCHRITT',
+        'diary_status_done': '✅ Erledigt',
+        'diary_status_rest_done': '😴 Ruhe',
+        'diary_status_missed': '❌ Verpasst',
+        'diary_status_upcoming': '⏳ Bevorstehend',
+        'diary_history_title': '📋 TRAININGSHISTORIE',
+        'diary_skipped_ex': 'Übersprungen',
+        'diary_no_skipped': 'Alle abgeschlossen',
+        'diary_exercises_list': 'Übungen',
+        'diary_min': 'Min',
+        'diary_workouts_word': 'Trainings',
+        'diary_days_word': 'Tage',
         'rec_progression': 'Steigern Sie die Last alle 2 Wochen um 5-10%',
         'rec_measurements': 'Messen Sie Ihren Körper alle 2 Wochen',
         # Neue Schlüssel
@@ -1394,6 +1466,24 @@ LOCALES = {
         'diary_title': '📊 训练日记',
         'total_workouts': '总训练次数',
         'great_progress': '🎉 进步很大！继续加油！',
+        'diary_total_time': '总时间',
+        'diary_completion': '已完成',
+        'diary_missed': '已错过',
+        'diary_upcoming': '即将到来',
+        'diary_streak': '连续',
+        'diary_avg_time': '平均时间',
+        'diary_progress_title': '📅 每日进度',
+        'diary_status_done': '✅ 完成',
+        'diary_status_rest_done': '😴 休息',
+        'diary_status_missed': '❌ 错过',
+        'diary_status_upcoming': '⏳ 即将到来',
+        'diary_history_title': '📋 训练历史',
+        'diary_skipped_ex': '跳过练习',
+        'diary_no_skipped': '全部完成',
+        'diary_exercises_list': '练习',
+        'diary_min': '分钟',
+        'diary_workouts_word': '次训练',
+        'diary_days_word': '天',
         'rec_progression': '每2周增加5-10%的负荷',
         'rec_measurements': '每2周测量一次身体数据',
         # 新键
@@ -4507,86 +4597,360 @@ class TrainingApp:
     def show_diary(self):
         self.current_screen = 'diary'
         
-        history_items = []
+        # === СВОДНАЯ СТАТИСТИКА ===
+        total_w = len(self.workout_history)
+        total_sec = sum(h.get('duration_seconds', 0) for h in self.workout_history)
+        total_min = total_sec // 60
+        avg_min = (total_sec // total_w // 60) if total_w > 0 else 0
         
+        # Считаем количество дней программы
+        total_program_days = 0
+        total_training_days = 0
+        completed_count = 0
+        rest_done_count = 0
+        missed_count = 0
+        upcoming_count = 0
+        
+        if self.program_data and self.program_data.get('schedule'):
+            for week in self.program_data['schedule']:
+                training_by_wd = {}
+                for d in week['days']:
+                    training_by_wd[d.get('weekday_idx', 0)] = d
+                for wd_idx in range(7):
+                    total_program_days += 1
+                    if wd_idx in training_by_wd:
+                        total_training_days += 1
+                        wk_key = (week['week'], training_by_wd[wd_idx]['day'])
+                        if wk_key in self.completed_workouts:
+                            completed_count += 1
+                        elif any(h['week'] == week['week'] and h['day'] == training_by_wd[wd_idx]['day'] for h in self.workout_history):
+                            completed_count += 1
+                        else:
+                            has_later_done = False
+                            found_current = False
+                            gdn = 0
+                            for wk2 in self.program_data['schedule']:
+                                t2 = {dd.get('weekday_idx', 0): dd for dd in wk2['days']}
+                                for wi2 in range(7):
+                                    gdn += 1
+                                    if wk2['week'] == week['week'] and wi2 == wd_idx:
+                                        found_current = True
+                                        continue
+                                    if found_current and wi2 in t2:
+                                        if (wk2['week'], t2[wi2]['day']) in self.completed_workouts:
+                                            has_later_done = True
+                                            break
+                                if has_later_done:
+                                    break
+                            if has_later_done:
+                                missed_count += 1
+                            else:
+                                upcoming_count += 1
+                    else:
+                        rk = (week['week'], wd_idx)
+                        if rk in self.completed_rest_days:
+                            rest_done_count += 1
+        
+        # Серия подряд
+        streak = 0
+        if self.program_data and self.program_data.get('schedule'):
+            day_list = []
+            for week in self.program_data['schedule']:
+                t_by_wd = {dd.get('weekday_idx', 0): dd for dd in week['days']}
+                for wd_idx in range(7):
+                    if wd_idx in t_by_wd:
+                        day_list.append(('train', (week['week'], t_by_wd[wd_idx]['day'])))
+                    else:
+                        day_list.append(('rest', (week['week'], wd_idx)))
+            for dtype, dkey in reversed(day_list):
+                if dtype == 'train' and dkey in self.completed_workouts:
+                    streak += 1
+                elif dtype == 'rest' and dkey in self.completed_rest_days:
+                    streak += 1
+                else:
+                    break
+        
+        # Карточка статистики
+        def stat_box(emoji, value, label, color=None):
+            return ft.Container(
+                content=ft.Column([
+                    ft.Text(emoji, size=20),
+                    ft.Text(str(value), size=18, weight=ft.FontWeight.BOLD,
+                           color=color or self.colors['text']),
+                    ft.Text(label, size=9, color=self.colors['text_secondary'],
+                           text_align=ft.TextAlign.CENTER),
+                ], horizontal_alignment=ft.CrossAxisAlignment.CENTER, spacing=2),
+                bgcolor=self.colors['bg_hover'],
+                border_radius=12,
+                padding=10,
+                expand=True,
+            )
+        
+        stats_row1 = ft.Row([
+            stat_box("🏋️", total_w, self.t('diary_workouts_word')),
+            stat_box("⏱️", f"{total_min} {self.t('diary_min')}", self.t('diary_total_time')),
+            stat_box("📊", f"{avg_min} {self.t('diary_min')}", self.t('diary_avg_time')),
+        ], spacing=8)
+        
+        stats_row2 = ft.Row([
+            stat_box("✅", completed_count, self.t('diary_completion'), self.colors['success']),
+            stat_box("❌", missed_count, self.t('diary_missed'), self.colors['danger']),
+            stat_box("⏳", upcoming_count, self.t('diary_upcoming'), self.colors['text_secondary']),
+            stat_box("🔥", streak, self.t('diary_streak'), self.colors['warning']),
+        ], spacing=8)
+        
+        stats_card = ft.Container(
+            content=ft.Column([stats_row1, ft.Container(height=6), stats_row2], spacing=0),
+            padding=14,
+            border_radius=14,
+            bgcolor=self.colors['bg_card'],
+            border=ft.border.all(1, self.colors['border']),
+            width=800,
+        )
+        
+        # === ПРОГРЕСС ПО ДНЯМ ===
+        progress_items = []
+        if self.program_data and self.program_data.get('schedule'):
+            global_day = 1
+            for week in self.program_data['schedule']:
+                progress_items.append(ft.Container(
+                    content=ft.Text(f"══ {self.t('week').upper()} {week['week']} ══",
+                                   size=12, weight=ft.FontWeight.BOLD,
+                                   color=self.colors['primary'], text_align=ft.TextAlign.CENTER),
+                    padding=6,
+                    width=800,
+                ))
+                training_by_wd = {dd.get('weekday_idx', 0): dd for dd in week['days']}
+                
+                for wd_idx in range(7):
+                    day_label = f"{self.t('day_num')} {global_day}"
+                    
+                    if wd_idx in training_by_wd:
+                        d = training_by_wd[wd_idx]
+                        wk_key = (week['week'], d['day'])
+                        group_name = self.t(d['group'])
+                        
+                        if wk_key in self.completed_workouts:
+                            status_text = self.t('diary_status_done')
+                            status_color = self.colors['success']
+                            bg_color = ft.Colors.with_opacity(0.1, self.colors['success'])
+                            log_entry = next((h for h in self.workout_history
+                                            if h['week'] == week['week'] and h['day'] == d['day']), None)
+                            if log_entry:
+                                dur = log_entry.get('duration_seconds', 0)
+                                extra = f" • {dur // 60}:{dur % 60:02d}"
+                            else:
+                                extra = ""
+                        else:
+                            has_later = False
+                            found = False
+                            for wk2 in self.program_data['schedule']:
+                                t2 = {dd.get('weekday_idx', 0): dd for dd in wk2['days']}
+                                for wi2 in range(7):
+                                    if wk2['week'] == week['week'] and wi2 == wd_idx:
+                                        found = True
+                                        continue
+                                    if found and wi2 in t2:
+                                        if (wk2['week'], t2[wi2]['day']) in self.completed_workouts:
+                                            has_later = True
+                                            break
+                                if has_later:
+                                    break
+                            if has_later:
+                                status_text = self.t('diary_status_missed')
+                                status_color = self.colors['danger']
+                                bg_color = ft.Colors.with_opacity(0.1, self.colors['danger'])
+                            else:
+                                status_text = self.t('diary_status_upcoming')
+                                status_color = self.colors['text_secondary']
+                                bg_color = None
+                            extra = ""
+                        
+                        progress_items.append(ft.Container(
+                            content=ft.Row([
+                                ft.Text(f"📅 {day_label}", size=11, color=self.colors['text'],
+                                       weight=ft.FontWeight.BOLD, width=70),
+                                ft.Text(f"{d.get('emoji', '💪')} {group_name}", size=11,
+                                       color=self.colors['text'], expand=True),
+                                ft.Text(f"{status_text}{extra}", size=10,
+                                       color=status_color, weight=ft.FontWeight.BOLD),
+                            ], alignment=ft.MainAxisAlignment.SPACE_BETWEEN, spacing=4),
+                            padding=ft.padding.symmetric(horizontal=12, vertical=8),
+                            border_radius=8,
+                            bgcolor=bg_color or self.colors['bg_card'],
+                            border=ft.border.all(1, status_color),
+                            width=800,
+                        ))
+                    else:
+                        rk = (week['week'], wd_idx)
+                        if rk in self.completed_rest_days:
+                            status_text = self.t('diary_status_rest_done')
+                            status_color = self.colors['success']
+                        else:
+                            status_text = self.t('rest_day')
+                            status_color = self.colors['text_secondary']
+                        
+                        progress_items.append(ft.Container(
+                            content=ft.Row([
+                                ft.Text(f"📅 {day_label}", size=11, color=self.colors['text_secondary'],
+                                       width=70),
+                                ft.Text(f"😴 {self.t('rest_day')}", size=11,
+                                       color=self.colors['text_secondary'], expand=True),
+                                ft.Text(status_text, size=10, color=status_color),
+                            ], alignment=ft.MainAxisAlignment.SPACE_BETWEEN, spacing=4),
+                            padding=ft.padding.symmetric(horizontal=12, vertical=6),
+                            border_radius=8,
+                            bgcolor=self.colors['bg_card'],
+                            width=800,
+                            opacity=0.7,
+                        ))
+                    
+                    global_day += 1
+        
+        # === ИСТОРИЯ ТРЕНИРОВОК ===
+        history_items = []
         if self.workout_history:
             for i, log in enumerate(reversed(self.workout_history), 1):
+                idx = len(self.workout_history) - i + 1
                 date_str = log['date'].strftime("%d.%m.%Y %H:%M")
-                
-                # Расчёт времени из duration_seconds
                 dur_sec = log.get('duration_seconds', 0)
                 dur_min = dur_sec // 60
                 dur_s = dur_sec % 60
-                
                 total_ex = len(log.get('exercises', []))
                 skipped = log.get('skipped_exercises', 0)
                 completed_ex = total_ex - skipped
                 
+                ex_names = [self.t(ex['name']) for ex in log.get('exercises', [])]
+                ex_list_text = ", ".join(ex_names[:5])
+                if len(ex_names) > 5:
+                    ex_list_text += f" +{len(ex_names) - 5}"
+                
+                if skipped > 0:
+                    skip_text = f"⚠️ {self.t('diary_skipped_ex')}: {skipped}"
+                    skip_color = self.colors['warning']
+                else:
+                    skip_text = f"✅ {self.t('diary_no_skipped')}"
+                    skip_color = self.colors['success']
+                
                 history_items.append(ft.Container(
                     content=ft.Column([
-                        ft.Text(f"#{len(self.workout_history) - i + 1} • {date_str}",
-                               size=14, weight=ft.FontWeight.BOLD, color=self.colors['primary']),
+                        ft.Row([
+                            ft.Text(f"#{idx}", size=16, weight=ft.FontWeight.BOLD,
+                                   color=self.colors['primary']),
+                            ft.Text(date_str, size=12, color=self.colors['text_secondary']),
+                        ], alignment=ft.MainAxisAlignment.SPACE_BETWEEN),
                         ft.Text(f"{self.t('week')} {log['week']}, {self.t('day')} {log['day']} — {self.t(log['group'])}",
-                               size=12, color=self.colors['text_secondary']),
-                        ft.Container(height=6),
+                               size=13, weight=ft.FontWeight.BOLD, color=self.colors['text']),
+                        ft.Container(height=4),
                         ft.Row([
                             ft.Container(
                                 content=ft.Column([
-                                    ft.Text("⏱️", size=18),
-                                    ft.Text(f"{dur_min}:{dur_s:02d}", size=16, weight=ft.FontWeight.BOLD, color=self.colors['text']),
-                                    ft.Text(self.t('time_label'), size=9, color=self.colors['text_secondary']),
+                                    ft.Text("⏱️", size=16),
+                                    ft.Text(f"{dur_min}:{dur_s:02d}", size=14, weight=ft.FontWeight.BOLD,
+                                           color=self.colors['text']),
                                 ], horizontal_alignment=ft.CrossAxisAlignment.CENTER, spacing=2),
-                                bgcolor=self.colors['bg_hover'],
-                                border_radius=10,
-                                padding=8,
-                                width=80,
+                                bgcolor=self.colors['bg_hover'], border_radius=10, padding=8, width=70,
                             ),
                             ft.Container(
                                 content=ft.Column([
-                                    ft.Text("✅", size=18),
-                                    ft.Text(f"{log.get('completed_sets', 0)}", size=16, weight=ft.FontWeight.BOLD, color=self.colors['success']),
-                                    ft.Text(self.t('sets_short'), size=9, color=self.colors['text_secondary']),
+                                    ft.Text("✅", size=16),
+                                    ft.Text(f"{log.get('completed_sets', 0)}", size=14,
+                                           weight=ft.FontWeight.BOLD, color=self.colors['success']),
                                 ], horizontal_alignment=ft.CrossAxisAlignment.CENTER, spacing=2),
-                                bgcolor=self.colors['bg_hover'],
-                                border_radius=10,
-                                padding=8,
-                                width=80,
+                                bgcolor=self.colors['bg_hover'], border_radius=10, padding=8, width=70,
                             ),
                             ft.Container(
                                 content=ft.Column([
-                                    ft.Text("🎯", size=18),
-                                    ft.Text(f"{completed_ex}/{total_ex}", size=16, weight=ft.FontWeight.BOLD, color=self.colors['text']),
-                                    ft.Text(self.t('exercises_done_label'), size=9, color=self.colors['text_secondary']),
+                                    ft.Text("🎯", size=16),
+                                    ft.Text(f"{completed_ex}/{total_ex}", size=14,
+                                           weight=ft.FontWeight.BOLD, color=self.colors['text']),
                                 ], horizontal_alignment=ft.CrossAxisAlignment.CENTER, spacing=2),
-                                bgcolor=self.colors['bg_hover'],
-                                border_radius=10,
-                                padding=8,
-                                width=80,
+                                bgcolor=self.colors['bg_hover'], border_radius=10, padding=8, width=70,
                             ),
                         ], alignment=ft.MainAxisAlignment.CENTER, spacing=8),
+                        ft.Container(height=4),
+                        ft.Text(f"📋 {self.t('diary_exercises_list')}: {ex_list_text}",
+                               size=10, color=self.colors['text_secondary'], max_lines=2,
+                               overflow=ft.TextOverflow.ELLIPSIS),
+                        ft.Text(skip_text, size=10, color=skip_color),
                     ], spacing=4),
                     padding=14,
                     border_radius=14,
                     bgcolor=self.colors['bg_card'],
                     border=ft.border.all(1, self.colors['border']),
+                    width=800,
                 ))
         else:
-            history_items.append(ft.Text(self.t('no_records'), color=self.colors['text_secondary']))
+            history_items.append(
+                ft.Container(
+                    content=ft.Text(self.t('no_records'), size=14,
+                                   color=self.colors['text_secondary'],
+                                   text_align=ft.TextAlign.CENTER),
+                    padding=20,
+                    width=800,
+                )
+            )
+        
+        # Прогресс-бар (процент выполнения)
+        completion_pct = 0
+        if total_training_days > 0:
+            completion_pct = int(completed_count / total_training_days * 100)
+        
+        progress_bar = ft.Container(
+            content=ft.Column([
+                ft.Row([
+                    ft.Text(f"📈 {self.t('diary_completion')}", size=13,
+                           weight=ft.FontWeight.BOLD, color=self.colors['text']),
+                    ft.Text(f"{completion_pct}%", size=13,
+                           weight=ft.FontWeight.BOLD, color=self.colors['primary']),
+                ], alignment=ft.MainAxisAlignment.SPACE_BETWEEN),
+                ft.ProgressBar(
+                    value=completion_pct / 100 if completion_pct > 0 else 0,
+                    color=self.colors['primary'],
+                    bgcolor=self.colors['bg_hover'],
+                    bar_height=10,
+                    border_radius=5,
+                ),
+            ], spacing=6),
+            padding=14,
+            border_radius=14,
+            bgcolor=self.colors['bg_card'],
+            width=800,
+        )
+        
+        # Мотивационное сообщение
+        if total_w >= 3:
+            motivation = ft.Text(self.t('great_progress'), size=14,
+                                color=self.colors['success'], text_align=ft.TextAlign.CENTER)
+        else:
+            motivation = ft.Container()
         
         content = ft.Container(
             content=ft.Column([
                 ft.Container(height=15),
                 ft.Text(self.t('diary_title'), size=22, weight=ft.FontWeight.BOLD,
                        color=self.colors['text']),
-                ft.Container(height=5),
-                ft.Text(f"{self.t('total_workouts')}: {len(self.workout_history)}",
-                       size=13, color=self.colors['text_secondary']),
-                ft.Container(height=18),
+                ft.Container(height=10),
                 
+                stats_card,
+                ft.Container(height=8),
+                progress_bar,
+                ft.Container(height=5),
+                motivation,
+                
+                ft.Container(height=15),
+                ft.Text(self.t('diary_progress_title'), size=16, weight=ft.FontWeight.BOLD,
+                       color=self.colors['text']),
+                ft.Container(height=8),
+                *progress_items,
+                
+                ft.Container(height=15),
+                ft.Text(self.t('diary_history_title'), size=16, weight=ft.FontWeight.BOLD,
+                       color=self.colors['text']),
+                ft.Container(height=8),
                 *history_items,
                 
                 ft.Container(height=18),
-                
                 ft.ElevatedButton(
                     self.t('back_to_program'),
                     bgcolor=self.colors['primary'],
@@ -4596,7 +4960,7 @@ class TrainingApp:
                     on_click=lambda e: self.show_result()
                 ),
                 ft.Container(height=15),
-            ], horizontal_alignment=ft.CrossAxisAlignment.CENTER, spacing=10),
+            ], horizontal_alignment=ft.CrossAxisAlignment.CENTER, spacing=8),
             padding=ft.Padding.symmetric(horizontal=20),
         )
         
