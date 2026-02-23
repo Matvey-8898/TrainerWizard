@@ -296,6 +296,15 @@ LOCALES = {
             'Планка на одной руке гифка': 'Планка на одной руке гифка',
             'Планка на прямых руках': 'Планка на прямых руках',
             'Планка с переходом в собаку мордой вниз': 'Планка с переходом в собаку мордой вниз',
+            'Планка в собаку': 'Планка в собаку',
+            'Планка в собаку мордой вниз': 'Планка в собаку мордой вниз',
+            'Выпады в ходьбе': 'Выпады в ходьбе',
+            'Выпады с прыжком': 'Выпады с прыжком',
+            'Обратные отжимания': 'Обратные отжимания',
+            'Отжимания на брусьях': 'Отжимания на брусьях',
+            'Подтягивания коленей': 'Подтягивания коленей',
+            'Подъёмы ног в сторону': 'Подъёмы ног в сторону',
+            'Скалолаз (быстрый)': 'Скалолаз (быстрый)',
             'Планка': 'Планка',
         # Переводы упражнений
         'Приседания': 'Приседания',
@@ -621,6 +630,15 @@ LOCALES = {
             'Планка на одной руке гифка': 'One-arm plank gif',
             'Планка на прямых руках': 'Straight-arm plank',
             'Планка с переходом в собаку мордой вниз': 'Plank to downward dog',
+            'Планка в собаку': 'Plank to downward dog',
+            'Планка в собаку мордой вниз': 'Plank to downward dog',
+            'Выпады в ходьбе': 'Walking lunges',
+            'Выпады с прыжком': 'Jump lunges',
+            'Обратные отжимания': 'Reverse push-ups',
+            'Отжимания на брусьях': 'Dips',
+            'Подтягивания коленей': 'Knee tucks',
+            'Подъёмы ног в сторону': 'Side leg raises',
+            'Скалолаз (быстрый)': 'Fast mountain climber',
             'Планка': 'Plank',
         # Exercise translations
         'Приседания': 'Squat',
@@ -937,6 +955,15 @@ LOCALES = {
         'Планка на одной руке': 'Plancha a un brazo',
         'Планка на прямых руках': 'Plancha con brazos rectos',
         'Планка с переходом в собаку мордой вниз': 'Plancha a perro boca abajo',
+        'Планка в собаку': 'Plancha a perro boca abajo',
+        'Планка в собаку мордой вниз': 'Plancha a perro boca abajo',
+        'Выпады в ходьбе': 'Zancadas caminando',
+        'Выпады с прыжком': 'Zancadas con salto',
+        'Обратные отжимания': 'Fondos invertidos',
+        'Отжимания на брусьях': 'Fondos en paralelas',
+        'Подтягивания коленей': 'Elevación de rodillas',
+        'Подъёмы ног в сторону': 'Elevación lateral de piernas',
+        'Скалолаз (быстрый)': 'Escalador rápido',
         'Обратные отжимания на трицепс': 'Fondos de tríceps',
         'Обратные снежные ангелы': 'Ángeles de nieve invertidos',
         'Обратная планка': 'Plancha inversa',
@@ -1244,6 +1271,15 @@ LOCALES = {
         'Планка на одной руке': 'Einarm-Planke',
         'Планка на прямых руках': 'Planke mit gestreckten Armen',
         'Планка с переходом в собаку мордой вниз': 'Planke zum herabschauenden Hund',
+        'Планка в собаку': 'Planke zum herabschauenden Hund',
+        'Планка в собаку мордой вниз': 'Planke zum herabschauenden Hund',
+        'Выпады в ходьбе': 'Ausfallschritte im Gehen',
+        'Выпады с прыжком': 'Sprung-Ausfallschritte',
+        'Обратные отжимания': 'Umgekehrte Liegestütze',
+        'Отжимания на брусьях': 'Dips',
+        'Подтягивания коленей': 'Knieheben',
+        'Подъёмы ног в сторону': 'Seitliches Beinheben',
+        'Скалолаз (быстрый)': 'Schneller Bergsteiger',
         'Обратные отжимания на трицепс': 'Trizeps-Dips',
         'Обратные снежные ангелы': 'Umgekehrte Schneeengel',
         'Обратная планка': 'Umgekehrte Planke',
@@ -1551,6 +1587,15 @@ LOCALES = {
         'Планка на одной руке': '单臂平板',
         'Планка на прямых руках': '直臂平板支撑',
         'Планка с переходом в собаку мордой вниз': '平板转下犬式',
+        'Планка в собаку': '平板转下犬式',
+        'Планка в собаку мордой вниз': '平板转下犬式',
+        'Выпады в ходьбе': '行走弓步',
+        'Выпады с прыжком': '跳跃弓步',
+        'Обратные отжимания': '反向俯卧撑',
+        'Отжимания на брусьях': '双杠臂屈伸',
+        'Подтягивания коленей': '提膝',
+        'Подъёмы ног в сторону': '侧抬腿',
+        'Скалолаз (быстрый)': '快速登山者',
         'Обратные отжимания на трицепс': '三头肌撑体',
         'Обратные снежные ангелы': '反向雪天使',
         'Обратная планка': '反向平板支撑',
@@ -3706,6 +3751,8 @@ class TrainingApp:
             'completed_sets': 0,
             'skipped_exercises': 0,
             'start_time': datetime.datetime.now(),
+            'exercise_results': [],
+            'exercise_start_time': datetime.datetime.now(),
         }
         self.timer_running = False
         self.show_workout()
@@ -4088,30 +4135,43 @@ class TrainingApp:
         cw['current_set'] += 1
         
         if cw['current_set'] > ex['sets']:
-            # Переходим к следующему упражнению
+            ex_time = (datetime.datetime.now() - cw.get('exercise_start_time', cw['start_time'])).seconds
+            cw['exercise_results'].append({
+                'name': ex['name'],
+                'status': 'done',
+                'sets': ex['sets'],
+                'time_seconds': ex_time,
+            })
             cw['current_exercise'] += 1
             cw['current_set'] = 1
+            cw['exercise_start_time'] = datetime.datetime.now()
             
-            # Проверяем есть ли ещё упражнения
             if cw['current_exercise'] < len(cw['day_data']['exercises']):
                 next_ex = cw['day_data']['exercises'][cw['current_exercise']]
-                # Отдых между упражнениями (побольше)
                 self.show_rest_screen(ex['rest_seconds'] + 10, next_ex)
             else:
                 self.complete_workout()
         else:
-            # Отдых между подходами
             self.show_rest_screen(ex['rest_seconds'], ex)
     
     def skip_exercise_with_rest(self):
         cw = self.current_workout
+        ex = cw['day_data']['exercises'][cw['current_exercise']]
+        ex_time = (datetime.datetime.now() - cw.get('exercise_start_time', cw['start_time'])).seconds
+        cw['exercise_results'].append({
+            'name': ex['name'],
+            'status': 'skipped',
+            'sets': ex['sets'],
+            'time_seconds': ex_time,
+        })
         cw['skipped_exercises'] = cw.get('skipped_exercises', 0) + 1
         cw['current_exercise'] += 1
         cw['current_set'] = 1
+        cw['exercise_start_time'] = datetime.datetime.now()
         
         if cw['current_exercise'] < len(cw['day_data']['exercises']):
             next_ex = cw['day_data']['exercises'][cw['current_exercise']]
-            self.show_rest_screen(10, next_ex)  # Короткий отдых при пропуске
+            self.show_rest_screen(10, next_ex)
         else:
             self.complete_workout()
     
@@ -4140,6 +4200,7 @@ class TrainingApp:
             'exercises': cw['day_data']['exercises'],
             'completed_sets': cw['completed_sets'],
             'skipped_exercises': skipped,
+            'exercise_results': cw.get('exercise_results', []),
         })
         
         # Создаём конфетти на весь экран
@@ -4820,17 +4881,41 @@ class TrainingApp:
                 skipped = log.get('skipped_exercises', 0)
                 completed_ex = total_ex - skipped
                 
-                ex_names = [self.t(ex['name']) for ex in log.get('exercises', [])]
-                ex_list_text = ", ".join(ex_names[:5])
-                if len(ex_names) > 5:
-                    ex_list_text += f" +{len(ex_names) - 5}"
+                # Детальный список упражнений
+                ex_detail_items = []
+                ex_results = log.get('exercise_results', [])
                 
-                if skipped > 0:
-                    skip_text = f"⚠️ {self.t('diary_skipped_ex')}: {skipped}"
-                    skip_color = self.colors['warning']
+                if ex_results:
+                    for er in ex_results:
+                        er_time = er.get('time_seconds', 0)
+                        er_min = er_time // 60
+                        er_s = er_time % 60
+                        if er['status'] == 'done':
+                            ex_icon = "✅"
+                            ex_color = self.colors['success']
+                            time_str = f" • {er_min}:{er_s:02d}"
+                        else:
+                            ex_icon = "❌"
+                            ex_color = self.colors['danger']
+                            time_str = ""
+                        ex_detail_items.append(
+                            ft.Row([
+                                ft.Text(ex_icon, size=12),
+                                ft.Text(self.t(er['name']), size=11,
+                                       color=ex_color, expand=True),
+                                ft.Text(f"{er['sets']} {self.t('sets_short')}{time_str}",
+                                       size=10, color=self.colors['text_secondary']),
+                            ], spacing=6)
+                        )
                 else:
-                    skip_text = f"✅ {self.t('diary_no_skipped')}"
-                    skip_color = self.colors['success']
+                    for ex in log.get('exercises', []):
+                        ex_detail_items.append(
+                            ft.Row([
+                                ft.Text("•", size=12, color=self.colors['text_secondary']),
+                                ft.Text(self.t(ex['name']), size=11,
+                                       color=self.colors['text_secondary']),
+                            ], spacing=6)
+                        )
                 
                 history_items.append(ft.Container(
                     content=ft.Column([
@@ -4848,31 +4933,41 @@ class TrainingApp:
                                     ft.Text("⏱️", size=16),
                                     ft.Text(f"{dur_min}:{dur_s:02d}", size=14, weight=ft.FontWeight.BOLD,
                                            color=self.colors['text']),
+                                    ft.Text(self.t('time_label'), size=9, color=self.colors['text_secondary']),
                                 ], horizontal_alignment=ft.CrossAxisAlignment.CENTER, spacing=2),
-                                bgcolor=self.colors['bg_hover'], border_radius=10, padding=8, width=70,
+                                bgcolor=self.colors['bg_hover'], border_radius=10, padding=8, width=90,
                             ),
                             ft.Container(
                                 content=ft.Column([
                                     ft.Text("✅", size=16),
                                     ft.Text(f"{log.get('completed_sets', 0)}", size=14,
                                            weight=ft.FontWeight.BOLD, color=self.colors['success']),
+                                    ft.Text(self.t('sets_short'), size=9, color=self.colors['text_secondary']),
                                 ], horizontal_alignment=ft.CrossAxisAlignment.CENTER, spacing=2),
-                                bgcolor=self.colors['bg_hover'], border_radius=10, padding=8, width=70,
+                                bgcolor=self.colors['bg_hover'], border_radius=10, padding=8, width=90,
                             ),
                             ft.Container(
                                 content=ft.Column([
                                     ft.Text("🎯", size=16),
                                     ft.Text(f"{completed_ex}/{total_ex}", size=14,
                                            weight=ft.FontWeight.BOLD, color=self.colors['text']),
+                                    ft.Text(self.t('exercises_done_label'), size=9, color=self.colors['text_secondary']),
                                 ], horizontal_alignment=ft.CrossAxisAlignment.CENTER, spacing=2),
-                                bgcolor=self.colors['bg_hover'], border_radius=10, padding=8, width=70,
+                                bgcolor=self.colors['bg_hover'], border_radius=10, padding=8, width=90,
                             ),
                         ], alignment=ft.MainAxisAlignment.CENTER, spacing=8),
-                        ft.Container(height=4),
-                        ft.Text(f"📋 {self.t('diary_exercises_list')}: {ex_list_text}",
-                               size=10, color=self.colors['text_secondary'], max_lines=2,
-                               overflow=ft.TextOverflow.ELLIPSIS),
-                        ft.Text(skip_text, size=10, color=skip_color),
+                        ft.Container(height=6),
+                        ft.Container(
+                            content=ft.Column([
+                                ft.Text(f"📋 {self.t('diary_exercises_list')}:", size=12,
+                                       weight=ft.FontWeight.BOLD, color=self.colors['text']),
+                                ft.Container(height=4),
+                                *ex_detail_items,
+                            ], spacing=3),
+                            bgcolor=self.colors['bg_hover'],
+                            border_radius=10,
+                            padding=10,
+                        ),
                     ], spacing=4),
                     padding=14,
                     border_radius=14,
