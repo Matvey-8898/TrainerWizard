@@ -2683,22 +2683,6 @@ class TrainingApp:
             label_style=ft.TextStyle(color=self.colors['text_secondary'], size=11),
         )
         
-        self.weeks_dropdown = ft.Dropdown(
-            label=self.t('weeks_program'),
-            width=500,
-            height=50,
-            options=[
-                ft.dropdown.Option("5", "5"),
-                ft.dropdown.Option("6", "6"),
-            ],
-            value="5",
-            border_radius=10,
-            border_color=self.colors['border'],
-            focused_border_color=self.colors['primary'],
-            text_style=ft.TextStyle(color=self.colors['text'], size=13),
-            label_style=ft.TextStyle(color=self.colors['text_secondary'], size=11),
-        )
-        
         self.level_dropdown = ft.Dropdown(
             label=self.t('level'),
             width=500,
@@ -2737,8 +2721,6 @@ class TrainingApp:
                 ft.Container(height=10),
                 
                 self.days_dropdown,
-                ft.Container(height=6),
-                self.weeks_dropdown,
                 ft.Container(height=6),
                 self.level_dropdown,
                 
@@ -2797,7 +2779,6 @@ class TrainingApp:
                 self.user_data['weight'] = weight
                 self.user_data['age'] = age
                 self.user_data['days'] = int(self.days_dropdown.value)
-                self.user_data['weeks'] = int(self.weeks_dropdown.value)
                 self.user_data['level'] = self.level_dropdown.value
                 self.show_goal()
                 return
@@ -2912,6 +2893,8 @@ class TrainingApp:
     
     def select_goal(self, goal):
         self.user_data['goal'] = goal
+        # Рассчитываем оптимальное количество недель по биометрии
+        self.calculate_weeks()
         if goal == 'weight_loss':
             self.user_data['focus'] = 'Weight Loss'
             self.show_safety()
@@ -3257,16 +3240,23 @@ class TrainingApp:
                 
                 ft.Container(height=15),
                 
-                # Рекомендации
+                # Персональные рекомендации по питанию
                 ft.Container(
                     content=ft.Column([
                         ft.Text(self.t('nutrition_tips'), size=13, weight=ft.FontWeight.BOLD,
                                color=self.colors['text']),
-                        ft.Text(self.t('tip1'), size=11, color=self.colors['text_secondary']),
-                        ft.Text(self.t('tip2'), size=11, color=self.colors['text_secondary']),
-                        ft.Text(self.t('tip3'), size=11, color=self.colors['text_secondary']),
-                        ft.Text(self.t('tip4'), size=11, color=self.colors['text_secondary']),
-                        ft.Text(self.t('tip5'), size=11, color=self.colors['text_secondary']),
+                        ft.Text(f"💧 {self.t('rec_water_daily').replace('{amount}', str(round(self.user_data.get('weight', 70) * 33 / 1000, 1)))}",
+                               size=11, color=self.colors['text_secondary']),
+                        ft.Text(f"🕐 {self.t('rec_meal_count').replace('{count}', str(nutrition.get('meals_count', 5)))}",
+                               size=11, color=self.colors['text_secondary']),
+                        ft.Text(f"⏰ {self.t('rec_meal_pre_workout')}",
+                               size=11, color=self.colors['text_secondary']),
+                        ft.Text(f"🍽️ {self.t('rec_meal_post_workout')}",
+                               size=11, color=self.colors['text_secondary']),
+                        ft.Text(f"🌙 {self.t('rec_meal_evening')}",
+                               size=11, color=self.colors['text_secondary']),
+                        ft.Text(f"💡 {self.t('rec_meal_tip_loss') if goal == 'weight_loss' else self.t('rec_meal_tip_gain')}",
+                               size=11, color=self.colors['text_secondary']),
                     ], spacing=4),
                     padding=18,
                     border_radius=14,
@@ -3298,6 +3288,64 @@ class TrainingApp:
         )
         
         self.build_page(content)
+    
+    def calculate_weeks(self):
+        """Рассчитывает оптимальное количество недель программы по биометрии"""
+        weight = self.user_data.get('weight', 70)
+        height = self.user_data.get('height', 175)
+        age = self.user_data.get('age', 25)
+        goal = self.user_data.get('goal', 'weight_loss')
+        level = self.user_data.get('level', 'beginner')
+        days = self.user_data.get('days', 3)
+        
+        bmi = weight / ((height / 100) ** 2)
+        
+        if goal == 'weight_loss':
+            # Чем выше ИМТ — тем дольше программа
+            if bmi >= 35:
+                base_weeks = 12       # ожирение 2+ степени
+            elif bmi >= 30:
+                base_weeks = 10       # ожирение 1 степени
+            elif bmi >= 27:
+                base_weeks = 8        # предожирение с запасом
+            elif bmi >= 25:
+                base_weeks = 6        # лёгкий лишний вес
+            else:
+                base_weeks = 5        # ИМТ в норме, сушка/рельеф
+        else:
+            # Набор массы
+            if bmi < 18.5:
+                base_weeks = 10       # дефицит массы — долго набирать
+            elif bmi < 22:
+                base_weeks = 8        # худощавый
+            elif bmi < 25:
+                base_weeks = 6        # норма
+            else:
+                base_weeks = 5        # уже есть масса
+        
+        # Корректировка по возрасту (после 40 метаболизм замедляется)
+        if age >= 50:
+            base_weeks += 2
+        elif age >= 40:
+            base_weeks += 1
+        
+        # Корректировка по уровню подготовки
+        if level == 'beginner':
+            base_weeks += 1  # новичкам нужно больше адаптации
+        elif level == 'advanced':
+            base_weeks = max(4, base_weeks - 1)  # опытным быстрее
+        
+        # Корректировка по частоте тренировок
+        if days <= 2:
+            base_weeks += 2  # мало тренировок — дольше
+        elif days >= 5:
+            base_weeks = max(4, base_weeks - 1)  # часто — быстрее
+        
+        # Ограничения: 4-16 недель
+        weeks = max(4, min(16, base_weeks))
+        
+        self.user_data['weeks'] = weeks
+        return weeks
     
     def calculate_nutrition(self):
         gender = self.user_data.get('gender', 'male')
