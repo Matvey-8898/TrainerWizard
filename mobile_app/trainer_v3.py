@@ -202,17 +202,51 @@ LOCALES = {
         'settings_exit': '🚪 Выйти из приложения',
         # Рекомендации
         'rec_title': '💡 Персональные рекомендации',
-        'rec_cardio_weight_loss': 'Добавьте 20-30 минут кардио после каждой тренировки',
-        'rec_cardio_muscle': 'Ограничьте кардио 10-15 минутами для сохранения массы',
-        'rec_nutrition_weight_loss': 'Дефицит калорий -500 ккал/день для плавного похудения',
-        'rec_nutrition_muscle': 'Профицит +300 ккал/день для набора качественной массы',
+        'rec_cardio_weight_loss': 'Добавьте 20-30 мин кардио после тренировки для жиросжигания',
+        'rec_cardio_muscle': 'Кардио не более 10-15 мин — иначе замедляется рост мышц',
         'rec_rest_days': 'Отдых {count} дней в неделю для восстановления мышц',
-        'rec_duration_beginner': 'Оптимальная продолжительность тренировки 30-45 минут',
-        'rec_duration_intermediate': 'Оптимальная продолжительность тренировки 45-60 минут',
-        'rec_duration_advanced': 'Оптимальная продолжительность тренировки 60-90 минут',
+        'rec_duration_beginner': 'Оптимальная длительность тренировки: 30-45 минут',
+        'rec_duration_intermediate': 'Оптимальная длительность тренировки: 45-60 минут',
+        'rec_duration_advanced': 'Оптимальная длительность тренировки: 60-90 минут',
         'rec_progression': 'Увеличивайте нагрузку на 5-10% каждые 2 недели',
-        'rec_measurements': 'Делайте замеры тела каждые 2 недели',
         'rec_warmup': 'Всегда начинайте с разминки 5-10 минут',
+        # Вода
+        'rec_water_title': 'Водный баланс',
+        'rec_water_daily': 'Ваша норма: {amount} л воды в день (из расчёта ~33 мл на 1 кг веса)',
+        'rec_water_training': 'В дни тренировок пейте больше: {amount} л (+ 500 мл на потоотделение)',
+        'rec_water_why': 'При вашем весе {weight} кг вода критична для обмена веществ и восстановления мышц',
+        'rec_water_morning': 'Стакан воды сразу после пробуждения запускает метаболизм',
+        # Питание по расписанию
+        'rec_meal_title': 'Режим питания',
+        'rec_meal_count': 'Ешьте {count} раз в день небольшими порциями для стабильного уровня сахара',
+        'rec_meal_pre_workout': 'Поешьте за 1.5-2 часа до тренировки',
+        'rec_meal_pre_detail': 'Сложные углеводы + белок (каша с яйцом, рис с курицей)',
+        'rec_meal_post_workout': 'После тренировки поешьте в течение 30-60 минут',
+        'rec_meal_post_detail': 'Быстрые углеводы + белок для закрытия углеводного окна',
+        'rec_meal_evening': 'Последний приём пищи за 2-3 часа до сна (лёгкий белок + овощи)',
+        'rec_meal_tip_loss': 'Не голодайте! Дефицит уже заложен в ваш план — ешьте по расписанию',
+        'rec_meal_tip_gain': 'Не пропускайте приёмы пищи — каждый пропуск тормозит рост мышц',
+        # Тренировки
+        'rec_train_title': 'Тренировки',
+        # Сон
+        'rec_sleep_title': 'Сон и восстановление',
+        'rec_sleep_hours': 'Спите {hours} часов — мышцы растут именно во сне',
+        'rec_sleep_schedule': 'Ложитесь и вставайте в одно время, даже в выходные',
+        'rec_sleep_recovery': 'При недосыпе кортизол растёт, а прогресс замедляется',
+        # Образ жизни
+        'rec_lifestyle_title': 'Образ жизни',
+        'rec_steps': 'Проходите 8000-10000 шагов в день для общего здоровья',
+        'rec_stretch': 'Растяжка 10-15 мин после тренировки уменьшает боль в мышцах',
+        'rec_lifestyle_loss': 'Больше двигайтесь в быту — лестница вместо лифта, прогулки после еды',
+        'rec_lifestyle_gain': 'Избегайте лишнего стресса — кортизол разрушает мышечную ткань',
+        # ИМТ-советы
+        'rec_bmi_under': 'Ваш ИМТ ниже нормы — сосредоточьтесь на калорийном питании с высоким содержанием белка',
+        'rec_bmi_normal': 'Ваш ИМТ в норме — отличная база для достижения целей!',
+        'rec_bmi_over': 'Ваш ИМТ повышен — кардио + дефицит дадут видимый результат за 4-6 недель',
+        'rec_bmi_obese': 'Ваш ИМТ высокий — начните с низкой интенсивности и постепенно наращивайте',
+        # Возрастные
+        'rec_age_50plus': 'После 50 особенно важна разминка (10-15 мин) и контроль пульса',
+        'rec_age_teen': 'В период роста избегайте чрезмерных нагрузок на позвоночник',
         # BMI
         'bmi': 'ИМТ',
         'goal_weight_loss': 'Сброс веса',
@@ -537,17 +571,44 @@ LOCALES = {
         'settings_back': '← Back',
         'settings_exit': '🚪 Exit App',
         'rec_title': '💡 Personal Recommendations',
-        'rec_cardio_weight_loss': 'Add 20-30 minutes of cardio after each workout',
-        'rec_cardio_muscle': 'Limit cardio to 10-15 minutes to preserve mass',
-        'rec_nutrition_weight_loss': 'Calorie deficit of -500 kcal/day for gradual weight loss',
-        'rec_nutrition_muscle': 'Surplus of +300 kcal/day for quality mass gain',
+        'rec_cardio_weight_loss': 'Add 20-30 min of cardio after workout for fat burning',
+        'rec_cardio_muscle': 'Keep cardio under 10-15 min — more slows muscle growth',
         'rec_rest_days': 'Rest {count} days per week for muscle recovery',
-        'rec_duration_beginner': 'Optimal workout duration 30-45 minutes',
-        'rec_duration_intermediate': 'Optimal workout duration 45-60 minutes',
-        'rec_duration_advanced': 'Optimal workout duration 60-90 minutes',
+        'rec_duration_beginner': 'Optimal workout duration: 30-45 minutes',
+        'rec_duration_intermediate': 'Optimal workout duration: 45-60 minutes',
+        'rec_duration_advanced': 'Optimal workout duration: 60-90 minutes',
         'rec_progression': 'Increase load by 5-10% every 2 weeks',
-        'rec_measurements': 'Take body measurements every 2 weeks',
         'rec_warmup': 'Always start with 5-10 min warm-up',
+        'rec_water_title': 'Water Balance',
+        'rec_water_daily': 'Your norm: {amount} L of water per day (~33 ml per 1 kg of body weight)',
+        'rec_water_training': 'On training days drink more: {amount} L (+500 ml for sweating)',
+        'rec_water_why': 'At your weight of {weight} kg, water is critical for metabolism and muscle recovery',
+        'rec_water_morning': 'A glass of water right after waking up kickstarts your metabolism',
+        'rec_meal_title': 'Meal Schedule',
+        'rec_meal_count': 'Eat {count} times a day in small portions to stabilize blood sugar',
+        'rec_meal_pre_workout': 'Eat 1.5-2 hours before your workout',
+        'rec_meal_pre_detail': 'Complex carbs + protein (oatmeal with egg, rice with chicken)',
+        'rec_meal_post_workout': 'Eat within 30-60 minutes after your workout',
+        'rec_meal_post_detail': 'Fast carbs + protein to close the anabolic window',
+        'rec_meal_evening': 'Last meal 2-3 hours before bed (light protein + vegetables)',
+        'rec_meal_tip_loss': 'Don\'t starve! The deficit is already built into your plan — eat on schedule',
+        'rec_meal_tip_gain': 'Don\'t skip meals — each missed meal slows muscle growth',
+        'rec_train_title': 'Training',
+        'rec_sleep_title': 'Sleep & Recovery',
+        'rec_sleep_hours': 'Sleep {hours} hours — muscles grow during sleep',
+        'rec_sleep_schedule': 'Go to bed and wake up at the same time, even on weekends',
+        'rec_sleep_recovery': 'Sleep deprivation raises cortisol and slows progress',
+        'rec_lifestyle_title': 'Lifestyle',
+        'rec_steps': 'Walk 8,000-10,000 steps daily for overall health',
+        'rec_stretch': 'Stretch 10-15 min after workout to reduce muscle soreness',
+        'rec_lifestyle_loss': 'Move more in daily life — stairs instead of elevator, walks after meals',
+        'rec_lifestyle_gain': 'Avoid excessive stress — cortisol breaks down muscle tissue',
+        'rec_bmi_under': 'Your BMI is below normal — focus on high-calorie, high-protein nutrition',
+        'rec_bmi_normal': 'Your BMI is normal — great foundation for reaching your goals!',
+        'rec_bmi_over': 'Your BMI is elevated — cardio + deficit will show visible results in 4-6 weeks',
+        'rec_bmi_obese': 'Your BMI is high — start with low intensity and gradually increase',
+        'rec_age_50plus': 'After 50, warm-up (10-15 min) and heart rate monitoring are especially important',
+        'rec_age_teen': 'During growth, avoid excessive spine stress',
         'bmi': 'BMI',
         'goal_weight_loss': 'Weight Loss',
         'goal_muscle_gain': 'Muscle Gain',
@@ -810,15 +871,44 @@ LOCALES = {
         'settings_back': '← Volver',
         'settings_exit': '🚪 Salir de la app',
         'rec_title': '💡 Recomendaciones personales',
-        'rec_cardio_weight_loss': 'Añade 20-30 minutos de cardio después de cada entrenamiento',
-        'rec_cardio_muscle': 'Limita el cardio a 10-15 minutos para conservar masa',
-        'rec_nutrition_weight_loss': 'Déficit de -500 kcal/día para pérdida gradual',
-        'rec_nutrition_muscle': 'Superávit de +300 kcal/día para ganar masa',
+        'rec_cardio_weight_loss': 'Añade 20-30 min de cardio después del entrenamiento para quemar grasa',
+        'rec_cardio_muscle': 'Cardio máximo 10-15 min — más ralentiza el crecimiento muscular',
         'rec_rest_days': 'Descansa {count} días a la semana para recuperación muscular',
-        'rec_duration_beginner': 'Duración óptima del entrenamiento 30-45 minutos',
-        'rec_duration_intermediate': 'Duración óptima del entrenamiento 45-60 minutos',
-        'rec_duration_advanced': 'Duración óptima del entrenamiento 60-90 minutos',
+        'rec_duration_beginner': 'Duración óptima del entrenamiento: 30-45 minutos',
+        'rec_duration_intermediate': 'Duración óptima del entrenamiento: 45-60 minutos',
+        'rec_duration_advanced': 'Duración óptima del entrenamiento: 60-90 minutos',
         'rec_warmup': 'Siempre empieza con calentamiento de 5-10 minutos',
+        'rec_progression': 'Aumenta la carga 5-10% cada 2 semanas',
+        'rec_water_title': 'Balance hídrico',
+        'rec_water_daily': 'Tu norma: {amount} L de agua al día (~33 ml por 1 kg de peso)',
+        'rec_water_training': 'En días de entrenamiento bebe más: {amount} L (+500 ml por sudoración)',
+        'rec_water_why': 'Con tu peso de {weight} kg, el agua es esencial para el metabolismo y la recuperación muscular',
+        'rec_water_morning': 'Un vaso de agua al despertar activa tu metabolismo',
+        'rec_meal_title': 'Horario de comidas',
+        'rec_meal_count': 'Come {count} veces al día en porciones pequeñas para estabilizar el azúcar',
+        'rec_meal_pre_workout': 'Come 1.5-2 horas antes del entrenamiento',
+        'rec_meal_pre_detail': 'Carbohidratos complejos + proteína (avena con huevo, arroz con pollo)',
+        'rec_meal_post_workout': 'Come dentro de 30-60 minutos después del entrenamiento',
+        'rec_meal_post_detail': 'Carbohidratos rápidos + proteína para cerrar la ventana anabólica',
+        'rec_meal_evening': 'Última comida 2-3 horas antes de dormir (proteína ligera + verduras)',
+        'rec_meal_tip_loss': '¡No pases hambre! El déficit ya está en tu plan — come según horario',
+        'rec_meal_tip_gain': 'No saltes comidas — cada comida perdida frena el crecimiento muscular',
+        'rec_train_title': 'Entrenamiento',
+        'rec_sleep_title': 'Sueño y recuperación',
+        'rec_sleep_hours': 'Duerme {hours} horas — los músculos crecen durante el sueño',
+        'rec_sleep_schedule': 'Acuéstate y levántate a la misma hora, incluso fines de semana',
+        'rec_sleep_recovery': 'La falta de sueño eleva el cortisol y frena el progreso',
+        'rec_lifestyle_title': 'Estilo de vida',
+        'rec_steps': 'Camina 8.000-10.000 pasos al día para la salud general',
+        'rec_stretch': 'Estira 10-15 min después del entrenamiento para reducir el dolor muscular',
+        'rec_lifestyle_loss': 'Muévete más en tu rutina — escaleras en vez de ascensor, caminar después de comer',
+        'rec_lifestyle_gain': 'Evita el estrés excesivo — el cortisol destruye el tejido muscular',
+        'rec_bmi_under': 'Tu IMC es bajo — enfócate en alimentación calórica rica en proteínas',
+        'rec_bmi_normal': '¡Tu IMC es normal — excelente base para tus objetivos!',
+        'rec_bmi_over': 'Tu IMC está elevado — cardio + déficit darán resultados visibles en 4-6 semanas',
+        'rec_bmi_obese': 'Tu IMC es alto — empieza con baja intensidad y aumenta gradualmente',
+        'rec_age_50plus': 'Después de 50, el calentamiento (10-15 min) y control del pulso son especialmente importantes',
+        'rec_age_teen': 'Durante el crecimiento, evita cargas excesivas en la columna vertebral',
         'bmi': 'IMC',
         'goal_weight_loss': 'Pérdida de peso',
         'goal_muscle_gain': 'Ganar músculo',
@@ -888,8 +978,6 @@ LOCALES = {
         'diary_min': 'min',
         'diary_workouts_word': 'entrenamientos',
         'diary_days_word': 'días',
-        'rec_progression': 'Aumente la carga 5-10% cada 2 semanas',
-        'rec_measurements': 'Tome medidas corporales cada 2 semanas',
         # Nuevas claves
         'no_records': 'Sin registros',
         'finish': 'Terminar',
@@ -1126,15 +1214,44 @@ LOCALES = {
         'settings_back': '← Zurück',
         'settings_exit': '🚪 App beenden',
         'rec_title': '💡 Persönliche Empfehlungen',
-        'rec_cardio_weight_loss': 'Füge 20-30 Minuten Cardio nach jedem Training hinzu',
-        'rec_cardio_muscle': 'Begrenze Cardio auf 10-15 Minuten um Masse zu erhalten',
-        'rec_nutrition_weight_loss': 'Kaloriendefizit von -500 kcal/Tag für sanfte Abnahme',
-        'rec_nutrition_muscle': 'Überschuss von +300 kcal/Tag für Masseaufbau',
+        'rec_cardio_weight_loss': '20-30 Min Cardio nach dem Training zur Fettverbrennung',
+        'rec_cardio_muscle': 'Cardio maximal 10-15 Min — mehr bremst Muskelwachstum',
         'rec_rest_days': 'Ruhe {count} Tage pro Woche für Muskelregeneration',
-        'rec_duration_beginner': 'Optimale Trainingsdauer 30-45 Minuten',
-        'rec_duration_intermediate': 'Optimale Trainingsdauer 45-60 Minuten',
-        'rec_duration_advanced': 'Optimale Trainingsdauer 60-90 Minuten',
+        'rec_duration_beginner': 'Optimale Trainingsdauer: 30-45 Minuten',
+        'rec_duration_intermediate': 'Optimale Trainingsdauer: 45-60 Minuten',
+        'rec_duration_advanced': 'Optimale Trainingsdauer: 60-90 Minuten',
         'rec_warmup': 'Beginne immer mit 5-10 Minuten Aufwärmen',
+        'rec_progression': 'Steigere die Last alle 2 Wochen um 5-10%',
+        'rec_water_title': 'Wasserhaushalt',
+        'rec_water_daily': 'Deine Norm: {amount} L Wasser pro Tag (~33 ml pro 1 kg Körpergewicht)',
+        'rec_water_training': 'An Trainingstagen mehr trinken: {amount} L (+500 ml fürs Schwitzen)',
+        'rec_water_why': 'Bei deinem Gewicht von {weight} kg ist Wasser entscheidend für Stoffwechsel und Erholung',
+        'rec_water_morning': 'Ein Glas Wasser direkt nach dem Aufwachen regt den Stoffwechsel an',
+        'rec_meal_title': 'Mahlzeitenplan',
+        'rec_meal_count': 'Iss {count} Mal am Tag in kleinen Portionen für stabilen Blutzucker',
+        'rec_meal_pre_workout': 'Iss 1,5-2 Stunden vor dem Training',
+        'rec_meal_pre_detail': 'Komplexe Kohlenhydrate + Protein (Haferflocken mit Ei, Reis mit Hähnchen)',
+        'rec_meal_post_workout': 'Iss innerhalb von 30-60 Minuten nach dem Training',
+        'rec_meal_post_detail': 'Schnelle Kohlenhydrate + Protein für das anabole Fenster',
+        'rec_meal_evening': 'Letzte Mahlzeit 2-3 Stunden vor dem Schlafen (leichtes Protein + Gemüse)',
+        'rec_meal_tip_loss': 'Nicht hungern! Das Defizit ist bereits in deinem Plan — iss nach Plan',
+        'rec_meal_tip_gain': 'Überspringe keine Mahlzeiten — jede verpasste bremst Muskelaufbau',
+        'rec_train_title': 'Training',
+        'rec_sleep_title': 'Schlaf & Erholung',
+        'rec_sleep_hours': 'Schlafe {hours} Stunden — Muskeln wachsen im Schlaf',
+        'rec_sleep_schedule': 'Geh zur gleichen Zeit schlafen und steh auf, auch am Wochenende',
+        'rec_sleep_recovery': 'Schlafmangel erhöht Cortisol und verlangsamt den Fortschritt',
+        'rec_lifestyle_title': 'Lebensstil',
+        'rec_steps': 'Geh 8.000-10.000 Schritte täglich für die allgemeine Gesundheit',
+        'rec_stretch': '10-15 Min Dehnen nach dem Training reduziert Muskelkater',
+        'rec_lifestyle_loss': 'Mehr Bewegung im Alltag — Treppen statt Aufzug, Spaziergänge nach dem Essen',
+        'rec_lifestyle_gain': 'Vermeide übermäßigen Stress — Cortisol baut Muskelgewebe ab',
+        'rec_bmi_under': 'Dein BMI ist unter Normal — konzentriere dich auf kalorienreiche, proteinreiche Ernährung',
+        'rec_bmi_normal': 'Dein BMI ist normal — tolle Grundlage für deine Ziele!',
+        'rec_bmi_over': 'Dein BMI ist erhöht — Cardio + Defizit zeigen Ergebnisse in 4-6 Wochen',
+        'rec_bmi_obese': 'Dein BMI ist hoch — beginne mit niedriger Intensität und steigere langsam',
+        'rec_age_50plus': 'Ab 50 sind Aufwärmen (10-15 Min) und Pulskontrolle besonders wichtig',
+        'rec_age_teen': 'Während des Wachstums übermäßige Wirbelsäulenbelastung vermeiden',
         'bmi': 'BMI',
         'goal_weight_loss': 'Gewichtsverlust',
         'goal_muscle_gain': 'Muskelaufbau',
@@ -1204,8 +1321,6 @@ LOCALES = {
         'diary_min': 'Min',
         'diary_workouts_word': 'Trainings',
         'diary_days_word': 'Tage',
-        'rec_progression': 'Steigern Sie die Last alle 2 Wochen um 5-10%',
-        'rec_measurements': 'Messen Sie Ihren Körper alle 2 Wochen',
         # Neue Schlüssel
         'no_records': 'Keine Einträge',
         'finish': 'Beenden',
@@ -1442,15 +1557,44 @@ LOCALES = {
         'settings_back': '← 返回',
         'settings_exit': '🚪 退出应用',
         'rec_title': '💡 个人建议',
-        'rec_cardio_weight_loss': '每次训练后增加20-30分钟有氧运动',
-        'rec_cardio_muscle': '将有氧运动限制在10-15分钟以保持肌肉量',
-        'rec_nutrition_weight_loss': '每天减少500卡路里以逐步减重',
-        'rec_nutrition_muscle': '每天增加300卡路里以增加肌肉',
+        'rec_cardio_weight_loss': '训练后增加20-30分钟有氧运动促进燃脂',
+        'rec_cardio_muscle': '有氧运动不超过10-15分钟 — 过多会减缓肌肉增长',
         'rec_rest_days': '每周休息{count}天以恢复肌肉',
-        'rec_duration_beginner': '最佳训练时长30-45分钟',
-        'rec_duration_intermediate': '最佳训练时长45-60分钟',
-        'rec_duration_advanced': '最佳训练时长60-90分钟',
+        'rec_duration_beginner': '最佳训练时长：30-45分钟',
+        'rec_duration_intermediate': '最佳训练时长：45-60分钟',
+        'rec_duration_advanced': '最佳训练时长：60-90分钟',
         'rec_warmup': '始终以5-10分钟热身开始',
+        'rec_progression': '每2周增加5-10%的负荷',
+        'rec_water_title': '水分平衡',
+        'rec_water_daily': '您的标准：每天{amount}升水（约每公斤体重33毫升）',
+        'rec_water_training': '训练日多喝：{amount}升（+500毫升补充出汗）',
+        'rec_water_why': '以您{weight}公斤的体重，水分对新陈代谢和肌肉恢复至关重要',
+        'rec_water_morning': '起床后立即喝一杯水可启动新陈代谢',
+        'rec_meal_title': '饮食计划',
+        'rec_meal_count': '每天{count}餐，少量多餐以稳定血糖',
+        'rec_meal_pre_workout': '训练前1.5-2小时进食',
+        'rec_meal_pre_detail': '复杂碳水+蛋白质（燕麦加鸡蛋、米饭加鸡肉）',
+        'rec_meal_post_workout': '训练后30-60分钟内进食',
+        'rec_meal_post_detail': '快速碳水+蛋白质关闭合成窗口',
+        'rec_meal_evening': '睡前2-3小时最后一餐（清淡蛋白质+蔬菜）',
+        'rec_meal_tip_loss': '不要挨饿！热量缺口已在计划中 — 按时进食',
+        'rec_meal_tip_gain': '不要跳过任何一餐 — 每次跳过都会减缓肌肉增长',
+        'rec_train_title': '训练',
+        'rec_sleep_title': '睡眠与恢复',
+        'rec_sleep_hours': '睡{hours}小时 — 肌肉在睡眠中生长',
+        'rec_sleep_schedule': '即使在周末也保持固定的作息时间',
+        'rec_sleep_recovery': '睡眠不足会增加皮质醇并减缓进步',
+        'rec_lifestyle_title': '生活方式',
+        'rec_steps': '每天走8000-10000步以维持整体健康',
+        'rec_stretch': '训练后拉伸10-15分钟减少肌肉酸痛',
+        'rec_lifestyle_loss': '日常多运动 — 走楼梯代替电梯，饭后散步',
+        'rec_lifestyle_gain': '避免过度压力 — 皮质醇会分解肌肉组织',
+        'rec_bmi_under': '您的BMI偏低 — 注重高热量高蛋白饮食',
+        'rec_bmi_normal': '您的BMI正常 — 达到目标的绝佳基础！',
+        'rec_bmi_over': '您的BMI偏高 — 有氧+热量缺口4-6周内会有明显效果',
+        'rec_bmi_obese': '您的BMI较高 — 从低强度开始逐步增加',
+        'rec_age_50plus': '50岁以上热身（10-15分钟）和心率监测尤为重要',
+        'rec_age_teen': '成长期避免脊柱过度负荷',
         'bmi': 'BMI',
         'goal_weight_loss': '减肥',
         'goal_muscle_gain': '增肌',
@@ -1520,8 +1664,6 @@ LOCALES = {
         'diary_min': '分钟',
         'diary_workouts_word': '次训练',
         'diary_days_word': '天',
-        'rec_progression': '每2周增加5-10%的负荷',
-        'rec_measurements': '每2周测量一次身体数据',
         # 新键
         'no_records': '没有记录',
         'finish': '结束',
@@ -3165,27 +3307,67 @@ class TrainingApp:
         goal = self.user_data.get('goal', 'weight_loss')
         days = self.user_data.get('days', 3)
         
+        # Формула Миффлина-Сан Жеора (BMR)
         if gender == 'male':
             bmr = 10 * weight + 6.25 * height - 5 * age + 5
         else:
             bmr = 10 * weight + 6.25 * height - 5 * age - 161
         
-        activity = 1.55 if days >= 4 else 1.375
+        # Более точный коэффициент активности
+        if days <= 2:
+            activity = 1.2       # минимальная активность
+        elif days == 3:
+            activity = 1.375     # лёгкая активность
+        elif days <= 5:
+            activity = 1.55      # умеренная активность
+        else:
+            activity = 1.725     # высокая активность
+        
         tdee = int(bmr * activity)
         
+        # ИМТ
+        bmi = weight / ((height / 100) ** 2)
+        
         if goal == 'weight_loss':
-            calories = int(tdee - 500)
+            # Дефицит зависит от ИМТ: чем выше ИМТ, тем больше можно дефицит
+            if bmi >= 30:
+                deficit = 600
+            elif bmi >= 27:
+                deficit = 500
+            else:
+                deficit = 400
+            calories = max(1200 if gender == 'female' else 1500, int(tdee - deficit))
             protein = int(weight * 1.8)
             fat = int(weight * 0.8)
         else:
-            calories = int(tdee + 300)
+            # Профицит зависит от уровня
+            level = self.user_data.get('level', 'beginner')
+            if level == 'beginner':
+                surplus = 350   # новички растут быстрее
+            elif level == 'intermediate':
+                surplus = 250
+            else:
+                surplus = 200   # опытным нужен меньший профицит
+            calories = int(tdee + surplus)
             protein = int(weight * 2.0)
             fat = int(weight * 1.0)
         
         protein_cal = protein * 4
         fat_cal = fat * 9
-        carbs_cal = calories - protein_cal - fat_cal
+        carbs_cal = max(0, calories - protein_cal - fat_cal)
         carbs = int(carbs_cal / 4)
+        
+        # Расчёт воды (мл): 30-35 мл/кг + тренировки
+        water_base = int(weight * 33)  # средний показатель 33 мл/кг
+        water_training = 500  # доп. 500 мл в дни тренировок
+        if age >= 50:
+            water_base = int(weight * 30)  # пожилым чуть меньше
+        
+        # Количество приёмов пищи
+        if goal == 'weight_loss':
+            meals = 4 if calories < 2000 else 5
+        else:
+            meals = 5 if calories < 2800 else 6
         
         nutrition = {
             'calories': calories,
@@ -3193,6 +3375,12 @@ class TrainingApp:
             'fat': fat,
             'carbs': carbs,
             'tdee': tdee,
+            'bmr': int(bmr),
+            'bmi': round(bmi, 1),
+            'water_base_ml': water_base,
+            'water_training_ml': water_base + water_training,
+            'meals_count': meals,
+            'deficit_or_surplus': -deficit if goal == 'weight_loss' else surplus,
         }
         
         self.user_data['nutrition_plan'] = nutrition
@@ -3207,15 +3395,45 @@ class TrainingApp:
         goal = self.user_data.get('goal', 'weight_loss')
         level = self.user_data.get('level', 'beginner')
         days = self.user_data.get('days', 3)
+        weight = self.user_data.get('weight', 70)
+        height = self.user_data.get('height', 175)
+        age = self.user_data.get('age', 25)
+        gender = self.user_data.get('gender', 'male')
+        nutrition = self.user_data.get('nutrition_plan', {})
+        
+        bmi = weight / ((height / 100) ** 2)
         
         recs = {}
         
+        # === ВОДА ===
+        water_base = nutrition.get('water_base_ml', int(weight * 33))
+        water_train = nutrition.get('water_training_ml', water_base + 500)
+        water_liters = round(water_base / 1000, 1)
+        water_train_liters = round(water_train / 1000, 1)
+        recs['water_daily'] = self.t('rec_water_daily').replace('{amount}', str(water_liters))
+        recs['water_training'] = self.t('rec_water_training').replace('{amount}', str(water_train_liters))
+        recs['water_why'] = self.t('rec_water_why').replace('{weight}', str(weight))
+        recs['water_morning'] = self.t('rec_water_morning')
+        
+        # === ПИТАНИЕ ПО РАСПИСАНИЮ ===
+        meals = nutrition.get('meals_count', 5)
+        recs['meal_count'] = self.t('rec_meal_count').replace('{count}', str(meals))
+        recs['meal_pre_workout'] = self.t('rec_meal_pre_workout')
+        recs['meal_post_workout'] = self.t('rec_meal_post_workout')
+        recs['meal_pre_detail'] = self.t('rec_meal_pre_detail')
+        recs['meal_post_detail'] = self.t('rec_meal_post_detail')
+        recs['meal_evening'] = self.t('rec_meal_evening')
+        
+        if goal == 'weight_loss':
+            recs['meal_goal_tip'] = self.t('rec_meal_tip_loss')
+        else:
+            recs['meal_goal_tip'] = self.t('rec_meal_tip_gain')
+        
+        # === ТРЕНИРОВКИ ===
         if goal == 'weight_loss':
             recs['cardio'] = self.t('rec_cardio_weight_loss')
-            recs['nutrition'] = self.t('rec_nutrition_weight_loss')
         else:
             recs['cardio'] = self.t('rec_cardio_muscle')
-            recs['nutrition'] = self.t('rec_nutrition_muscle')
         
         rest_count = 7 - days
         recs['rest_days'] = self.t('rec_rest_days').replace('{count}', str(rest_count))
@@ -3227,9 +3445,45 @@ class TrainingApp:
         else:
             recs['duration'] = self.t('rec_duration_advanced')
         
-        recs['progression'] = self.t('rec_progression')
-        recs['measurements'] = self.t('rec_measurements')
         recs['warmup'] = self.t('rec_warmup')
+        recs['progression'] = self.t('rec_progression')
+        
+        # === СОН И ВОССТАНОВЛЕНИЕ ===
+        if level == 'advanced' or days >= 5:
+            sleep_hours = '8-9'
+        elif age >= 50:
+            sleep_hours = '7-9'
+        elif age < 18:
+            sleep_hours = '9-10'
+        else:
+            sleep_hours = '7-8'
+        recs['sleep_hours'] = self.t('rec_sleep_hours').replace('{hours}', sleep_hours)
+        recs['sleep_schedule'] = self.t('rec_sleep_schedule')
+        recs['sleep_recovery'] = self.t('rec_sleep_recovery')
+        
+        # === ОБРАЗ ЖИЗНИ ===
+        recs['steps'] = self.t('rec_steps')
+        recs['stretch'] = self.t('rec_stretch')
+        if goal == 'weight_loss':
+            recs['lifestyle_tip'] = self.t('rec_lifestyle_loss')
+        else:
+            recs['lifestyle_tip'] = self.t('rec_lifestyle_gain')
+        
+        # === ИМТ-персонализация ===
+        if bmi < 18.5:
+            recs['bmi_tip'] = self.t('rec_bmi_under')
+        elif bmi < 25:
+            recs['bmi_tip'] = self.t('rec_bmi_normal')
+        elif bmi < 30:
+            recs['bmi_tip'] = self.t('rec_bmi_over')
+        else:
+            recs['bmi_tip'] = self.t('rec_bmi_obese')
+        
+        # === ВОЗРАСТНЫЕ ===
+        if age >= 50:
+            recs['age_tip'] = self.t('rec_age_50plus')
+        elif age < 18:
+            recs['age_tip'] = self.t('rec_age_teen')
         
         return recs
     
@@ -3486,50 +3740,121 @@ class TrainingApp:
                  width=800,
         )
         
-        # Карточка рекомендаций
-        rec_items = []
-        if recs.get('cardio'):
-            rec_items.append(ft.Text(f"🏃 {recs['cardio']}", size=9, color=self.colors['text_secondary']))
-        if recs.get('rest_days'):
-            rec_items.append(ft.Text(f"😌 {recs['rest_days']}", size=9, color=self.colors['text_secondary']))
-        if recs.get('duration'):
-            rec_items.append(ft.Text(f"⏱️ {recs['duration']}", size=9, color=self.colors['text_secondary']))
-        if recs.get('nutrition'):
-            rec_items.append(ft.Text(f"🍎 {recs['nutrition']}", size=9, color=self.colors['text_secondary']))
-        if recs.get('warmup'):
-            rec_items.append(ft.Text(f"🔥 {recs['warmup']}", size=9, color=self.colors['text_secondary']))
+        # Карточка рекомендаций — полная с секциями
+        def rec_section(icon, title, items):
+            """Создаёт секцию рекомендаций с заголовком и пунктами"""
+            section_items = [
+                ft.Container(
+                    content=ft.Text(f"{icon} {title}", size=13, weight=ft.FontWeight.BOLD,
+                                   color=self.colors['primary']),
+                    margin=ft.Margin(left=0, top=8, right=0, bottom=2),
+                ),
+            ]
+            for item in items:
+                section_items.append(
+                    ft.Text(f"  • {item}", size=11, color=self.colors['text_secondary'])
+                )
+            return section_items
+        
+        # Собираем все секции рекомендаций
+        all_rec_items = []
+        
+        # 💧 Вода
+        water_items = [recs['water_daily'], recs['water_training'], recs['water_why'], recs['water_morning']]
+        all_rec_items.extend(rec_section('💧', self.t('rec_water_title'), water_items))
+        
+        # 🕐 Режим питания
+        meal_items = [recs['meal_count'], recs['meal_pre_workout'], recs['meal_pre_detail'],
+                      recs['meal_post_workout'], recs['meal_post_detail'],
+                      recs['meal_evening'], recs['meal_goal_tip']]
+        all_rec_items.extend(rec_section('🕐', self.t('rec_meal_title'), meal_items))
+        
+        # 🏋️ Тренировки
+        train_items = [recs['cardio'], recs['duration'], recs['rest_days'],
+                       recs['warmup'], recs['progression']]
+        all_rec_items.extend(rec_section('🏋️', self.t('rec_train_title'), train_items))
+        
+        # 😴 Сон
+        sleep_items = [recs['sleep_hours'], recs['sleep_schedule'], recs['sleep_recovery']]
+        all_rec_items.extend(rec_section('😴', self.t('rec_sleep_title'), sleep_items))
+        
+        # 🚶 Образ жизни
+        lifestyle_items = [recs['steps'], recs['stretch'], recs['lifestyle_tip']]
+        if recs.get('bmi_tip'):
+            lifestyle_items.append(recs['bmi_tip'])
+        if recs.get('age_tip'):
+            lifestyle_items.append(recs['age_tip'])
+        all_rec_items.extend(rec_section('🚶', self.t('rec_lifestyle_title'), lifestyle_items))
         
         rec_card = ft.Container(
             content=ft.Column([
-                ft.Text(self.t('rec_title'), size=14, weight=ft.FontWeight.BOLD,
-                       color=self.colors['primary']),
-                ft.Container(height=5),
-                *rec_items,
-            ], spacing=3),
-            padding=14,
+                ft.Text(self.t('rec_title'), size=15, weight=ft.FontWeight.BOLD,
+                       color=self.colors['text']),
+                *all_rec_items,
+            ], spacing=2),
+            padding=16,
             border_radius=12,
             bgcolor=self.colors['bg_card'],
             width=800,
         )
         
-        # Карточка питания
+        # Карточка питания — расширенная
         goal_emoji = "📉" if meta['goal'] == 'weight_loss' else "📈"
+        delta = nutrition.get('deficit_or_surplus', 0)
+        delta_text = f"{delta:+d} {self.t('kcal_day').lower()}"
+        
         nutrition_card = ft.Container(
             content=ft.Column([
-                ft.Text(self.t('nutrition_title'), size=14, weight=ft.FontWeight.BOLD,
-                       color=self.colors['primary']),
+                ft.Text(self.t('nutrition_title'), size=15, weight=ft.FontWeight.BOLD,
+                       color=self.colors['text']),
+                ft.Container(height=5),
+                # Калории
                 ft.Row([
-                    ft.Text(goal_emoji, size=20),
-                    ft.Text(f"{goal_text}: {nutrition.get('calories', 0)} {self.t('kcal_day').replace('ККАЛ/ДЕНЬ', 'ккал/день').replace('KCAL/DAY', 'kcal/day')}",
-                           size=13, weight=ft.FontWeight.BOLD, color=self.colors['text']),
-                ], alignment=ft.MainAxisAlignment.CENTER, spacing=5),
+                    ft.Text(goal_emoji, size=22),
+                    ft.Column([
+                        ft.Text(f"{nutrition.get('calories', 0)} {self.t('kcal_day').lower()}",
+                               size=18, weight=ft.FontWeight.BOLD, color=self.colors['primary']),
+                        ft.Text(f"{goal_text} ({delta_text})",
+                               size=10, color=self.colors['text_secondary']),
+                    ], spacing=0),
+                ], alignment=ft.MainAxisAlignment.CENTER, spacing=8),
+                ft.Container(height=5),
+                # Макронутриенты
                 ft.Row([
-                    ft.Text(f"🥩 {nutrition.get('protein', 0)}{self.t('g')}", size=11, color=self.colors['text_secondary']),
-                    ft.Text(f"🥑 {nutrition.get('fat', 0)}{self.t('g')}", size=11, color=self.colors['text_secondary']),
-                    ft.Text(f"🍞 {nutrition.get('carbs', 0)}{self.t('g')}", size=11, color=self.colors['text_secondary']),
-                ], alignment=ft.MainAxisAlignment.CENTER, spacing=15),
+                    ft.Container(
+                        content=ft.Column([
+                            ft.Text("🥩", size=18),
+                            ft.Text(f"{nutrition.get('protein', 0)}{self.t('g')}", size=13,
+                                   weight=ft.FontWeight.BOLD, color=self.colors['text']),
+                            ft.Text(self.t('protein'), size=9, color=self.colors['text_secondary']),
+                        ], horizontal_alignment=ft.CrossAxisAlignment.CENTER, spacing=1),
+                        padding=8, border_radius=10, bgcolor=self.colors['bg_hover'], expand=True,
+                    ),
+                    ft.Container(
+                        content=ft.Column([
+                            ft.Text("🥑", size=18),
+                            ft.Text(f"{nutrition.get('fat', 0)}{self.t('g')}", size=13,
+                                   weight=ft.FontWeight.BOLD, color=self.colors['text']),
+                            ft.Text(self.t('fats'), size=9, color=self.colors['text_secondary']),
+                        ], horizontal_alignment=ft.CrossAxisAlignment.CENTER, spacing=1),
+                        padding=8, border_radius=10, bgcolor=self.colors['bg_hover'], expand=True,
+                    ),
+                    ft.Container(
+                        content=ft.Column([
+                            ft.Text("🍞", size=18),
+                            ft.Text(f"{nutrition.get('carbs', 0)}{self.t('g')}", size=13,
+                                   weight=ft.FontWeight.BOLD, color=self.colors['text']),
+                            ft.Text(self.t('carbs'), size=9, color=self.colors['text_secondary']),
+                        ], horizontal_alignment=ft.CrossAxisAlignment.CENTER, spacing=1),
+                        padding=8, border_radius=10, bgcolor=self.colors['bg_hover'], expand=True,
+                    ),
+                ], spacing=8),
+                ft.Container(height=5),
+                # Доп. инфо: BMR и TDEE
+                ft.Text(f"⚡ BMR: {nutrition.get('bmr', '—')} | TDEE: {nutrition.get('tdee', '—')} {self.t('kcal_day').lower()}",
+                       size=10, color=self.colors['text_secondary'], text_align=ft.TextAlign.CENTER),
             ], horizontal_alignment=ft.CrossAxisAlignment.CENTER, spacing=5),
-            padding=14,
+            padding=16,
             border_radius=12,
             bgcolor=self.colors['bg_card'],
             width=800,
