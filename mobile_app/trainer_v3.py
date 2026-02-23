@@ -2034,6 +2034,42 @@ class TrainingApp:
         )
     
     def build_top_bar(self):
+        # Кнопки действий (показываем только если программа сгенерирована)
+        action_buttons = []
+        if hasattr(self, 'program') and self.program:
+            action_buttons = [
+                ft.Container(
+                    content=ft.Icon(ft.Icons.SAVE, color="white", size=18),
+                    width=36,
+                    height=36,
+                    border_radius=18,
+                    bgcolor=self.colors['primary'],
+                    alignment=ft.Alignment(0, 0),
+                    on_click=lambda e: self.save_program(),
+                    tooltip=self.t('save_program'),
+                ),
+                ft.Container(
+                    content=ft.Icon(ft.Icons.MENU_BOOK, color="white", size=18),
+                    width=36,
+                    height=36,
+                    border_radius=18,
+                    bgcolor=self.colors['secondary'],
+                    alignment=ft.Alignment(0, 0),
+                    on_click=lambda e: self.show_diary(),
+                    tooltip=self.t('diary'),
+                ),
+                ft.Container(
+                    content=ft.Icon(ft.Icons.REFRESH, color="white", size=18),
+                    width=36,
+                    height=36,
+                    border_radius=18,
+                    bgcolor=self.colors['warning'],
+                    alignment=ft.Alignment(0, 0),
+                    on_click=lambda e: self.show_welcome(),
+                    tooltip=self.t('new_program'),
+                ),
+            ]
+        
         return ft.Container(
             content=ft.Row([
                 ft.Row([
@@ -2044,21 +2080,24 @@ class TrainingApp:
                     ft.Text("TrainerWizard", size=18, weight=ft.FontWeight.BOLD, 
                            color=self.colors['text']),
                 ], spacing=8),
-                ft.Container(
-                    content=ft.Icon(ft.Icons.SETTINGS, color="white", size=20),
-                    width=40,
-                    height=40,
-                    border_radius=20,
-                    gradient=ft.LinearGradient(
-                        begin=ft.Alignment(-1, -1),
-                        end=ft.Alignment(1, 1),
-                        colors=[self.colors['primary'], self.colors['secondary']],
+                ft.Row([
+                    *action_buttons,
+                    ft.Container(
+                        content=ft.Icon(ft.Icons.SETTINGS, color="white", size=20),
+                        width=40,
+                        height=40,
+                        border_radius=20,
+                        gradient=ft.LinearGradient(
+                            begin=ft.Alignment(-1, -1),
+                            end=ft.Alignment(1, 1),
+                            colors=[self.colors['primary'], self.colors['secondary']],
+                        ),
+                        alignment=ft.Alignment(0, 0),
+                        on_click=lambda e: self.toggle_settings(),
+                        animate_scale=ft.Animation(150, ft.AnimationCurve.EASE_OUT),
+                        on_hover=lambda e: setattr(e.control, 'scale', 1.1 if e.data == "true" else 1.0) or e.control.update(),
                     ),
-                    alignment=ft.Alignment(0, 0),
-                    on_click=lambda e: self.toggle_settings(),
-                    animate_scale=ft.Animation(150, ft.AnimationCurve.EASE_OUT),
-                    on_hover=lambda e: setattr(e.control, 'scale', 1.1 if e.data == "true" else 1.0) or e.control.update(),
-                ),
+                ], spacing=6),
             ], alignment=ft.MainAxisAlignment.SPACE_BETWEEN),
             padding=ft.Padding.symmetric(horizontal=15, vertical=12),
             gradient=ft.LinearGradient(
@@ -3662,37 +3701,6 @@ class TrainingApp:
                 
                 global_day_num += 1
         
-        # Кнопки внизу
-        bottom_buttons = ft.Row([
-            ft.ElevatedButton(
-                self.t('save_program'),
-                bgcolor=self.colors['primary'],
-                color="white",
-                height=38,
-                width=120,
-                style=ft.ButtonStyle(text_style=ft.TextStyle(size=12)),
-                on_click=lambda e: self.save_program()
-            ),
-            ft.ElevatedButton(
-                self.t('diary'),
-                bgcolor=self.colors['secondary'],
-                color="white",
-                height=38,
-                width=120,
-                style=ft.ButtonStyle(text_style=ft.TextStyle(size=12)),
-                on_click=lambda e: self.show_diary()
-            ),
-            ft.ElevatedButton(
-                self.t('new_program'),
-                bgcolor=self.colors['warning'],
-                color="white",
-                height=38,
-                width=120,
-                style=ft.ButtonStyle(text_style=ft.TextStyle(size=12)),
-                on_click=lambda e: self.show_welcome()
-            ),
-        ], alignment=ft.MainAxisAlignment.CENTER, spacing=10)
-        
         # Контейнер с ограниченной шириной для консистентности
         inner_content = ft.Container(
                  content=ft.Column([
@@ -3714,8 +3722,6 @@ class TrainingApp:
                 
                   *day_cards,
                 
-                  ft.Container(height=15),
-                  bottom_buttons,
                   ft.Container(height=15),
                  ], horizontal_alignment=ft.CrossAxisAlignment.CENTER, spacing=8),
                  width=800,  # Фиксированная ширина контента
@@ -4087,15 +4093,25 @@ class TrainingApp:
                 
                 ft.Container(height=25),
                 
-                # Кнопка пропуска отдыха
-                ft.Container(
-                    content=ft.Text(f"⏭️ {self.t('skip_rest')}", size=14,
-                                   weight=ft.FontWeight.BOLD, color="white"),
-                    padding=ft.Padding(left=40, right=40, top=12, bottom=12),
-                    border_radius=25,
-                    bgcolor=self.colors['warning'],
-                    on_click=lambda e: self.skip_rest(),
-                ),
+                # Кнопки: +10 сек и пропуск отдыха
+                ft.Row([
+                    ft.Container(
+                        content=ft.Text(f"⏱️ {self.t('add_10_sec')}", size=14,
+                                       weight=ft.FontWeight.BOLD, color="white"),
+                        padding=ft.Padding(left=25, right=25, top=12, bottom=12),
+                        border_radius=25,
+                        bgcolor=self.colors['secondary'],
+                        on_click=lambda e: self.add_rest_time(10),
+                    ),
+                    ft.Container(
+                        content=ft.Text(f"⏭️ {self.t('skip_rest')}", size=14,
+                                       weight=ft.FontWeight.BOLD, color="white"),
+                        padding=ft.Padding(left=25, right=25, top=12, bottom=12),
+                        border_radius=25,
+                        bgcolor=self.colors['warning'],
+                        on_click=lambda e: self.skip_rest(),
+                    ),
+                ], alignment=ft.MainAxisAlignment.CENTER, spacing=15),
             ], horizontal_alignment=ft.CrossAxisAlignment.CENTER,
                alignment=ft.MainAxisAlignment.CENTER, spacing=5),
         )
@@ -4126,6 +4142,16 @@ class TrainingApp:
     def skip_rest(self):
         self.timer_running = False
         self.show_workout()
+    
+    def add_rest_time(self, extra_seconds):
+        self.timer_seconds += extra_seconds
+        if hasattr(self, 'timer_text') and self.timer_text:
+            self.timer_text.value = f"{self.timer_seconds}"
+            self.timer_text.color = self.colors['primary']
+            try:
+                self.page.update()
+            except:
+                pass
     
     def complete_set_with_rest(self):
         cw = self.current_workout
