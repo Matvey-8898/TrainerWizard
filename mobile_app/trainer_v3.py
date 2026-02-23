@@ -2036,7 +2036,7 @@ class TrainingApp:
     def build_top_bar(self):
         # Кнопки действий (показываем только если программа сгенерирована)
         action_buttons = []
-        if hasattr(self, 'program') and self.program:
+        if hasattr(self, 'program_data') and self.program_data:
             action_buttons = [
                 ft.Container(
                     content=ft.Icon(ft.Icons.SAVE, color="white", size=18),
